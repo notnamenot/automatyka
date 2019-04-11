@@ -1,0 +1,32 @@
+clear removes workspace variables, and clc clears the Command Window.
+
+linspace(first,last,number_of_elements)
+
+ transpose operator (') v  x = (1:2:5)'	
+
+matrices of random numbers  x = rand(2)
+
+zeros function to create a matrix of all zeros  x=zeros(6,3)
+
+When used as an index, the colon operator (:) specifies all the elements in that dimension. The syntax x = A(2,:)
+
+Remember you can use the : character to extract entire columns of data   v2=data(:,end)
+
+In contrast, the .* operator performs elementwise multiplication and allows you to multiply the corresponding elements of two equally sized arrays.
+
+The plot function accepts an additional argument that allows you to specify the color, line style, and marker style using different symbols in single quotes  plot(x,y,'r--o')
+To plot one line on top of another, use the hold on command to hold the previous plot while you add another line
+
+Try closing all open figure windows by issuing the close all command.
+Use the ylabel function to add the label 
+Use the legend function to specify a legend. legend('a','b','c')
+
+A Fourier transform returns information about the frequency content of the signal. You can use the fft function to compute the discrete Fourier transform of a vector. fft(y)
+
+Use the numel function to return the number of elements in an array.
+
+You can use a logical array as an array index, in which case MATLAB extracts the array elements where the index is true. The following example will extract all elements in v1 that are greater than six. v = v1(v1 > 6)
+
+You can use logical indexing to reassign values in an array. For example, if you wish to replace all values in the array x that are equal to 999 with the value 0, use the following syntax.  x(x==999) = 0
+
+Use the loglog function in the same way as the plot function to obtain log scales for both axes.
